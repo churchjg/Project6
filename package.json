@@ -10,7 +10,8 @@
     "axios": "^0.21.0",
     "axois": "0.0.1-security",
     "express": "^4.17.1",
-    "mongoose": "^5.10.12"
+    "mongoose": "^5.10.12",
+    "node-fetch": "^2.6.1"
   },
   "devDependencies": {},
   "scripts": {
