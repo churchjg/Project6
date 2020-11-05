@@ -14,7 +14,7 @@ const urlRandom = 'https://www.themealdb.com/api/json/v1/1/random.php' //Lookup 
 // const urlAreaFilt = 'https://www.themealdb.com/api/json/v1/1/filter.php?a=Canadian' //Filter by Area
 
 
-for (let i = 0; i < 5; i++) {
+for (let i = 0; i < 25; i++) {
     fetch(urlRandom)
         .then(res => res.json())
         .then(data => {
