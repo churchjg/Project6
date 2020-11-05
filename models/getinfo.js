@@ -28,8 +28,6 @@ for (let i = 0; i < 25; i++) {
                 , instructions: data.meals[0].strInstructions
                 , area: data.meals[0].strArea
                 , video: data.meals[0].strYoutube
-
-
             })
             // meal.name = data.meals.strMeal
             // meal._id = data.meals.idMeal
