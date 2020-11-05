@@ -4,9 +4,11 @@ const Schema = mongoose.Schema;
 
 const foodInfoSchema = new Schema({
     name: String,
-    _id: String,
+    // _id: String,
     image: String,
-    description: String,
+    category: String,
+    tags: String,
+    // ingredient: String,
     instructions: String,
     area: String,
     video: String,

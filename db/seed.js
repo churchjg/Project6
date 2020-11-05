@@ -24,7 +24,9 @@ const foodInfoData = data.map(data => {
     meal.name = data.meals.strMeal
     // meal._id = data.meals.idMeal
     meal.image = data.meals.strMealThumb
-    meal.description = data.meals.strCategory
+    meal.category = data.meals.strCategory
+    meal.tags = data.meals.strTags
+    // meal.ingredient = data.meals.strIngredient
     meal.instructions = data.meals.strInstructions
     meal.area = data.meals.strArea
     meal.video = data.meals.strYoutube
