@@ -9,6 +9,7 @@
   "dependencies": {
     "axios": "^0.21.0",
     "axois": "0.0.1-security",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "mongoose": "^5.10.12",
     "node-fetch": "^2.6.1"
@@ -29,4 +30,3 @@
   },
   "homepage": "https://github.com/churchjg/Project6#readme"
 }
-
