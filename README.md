@@ -56,7 +56,7 @@ app.get("/area/:id", (req, res) => {
     });
 })
 
-*SEARCH BY TAGES (starter, dessert, sides) -
+*SEARCH BY TAGS (starter, dessert, sides) -
 
 app.get("/tags/:id", (req, res) => {
     meal.find({tags: req.params.id}).then(foodInfo => {
