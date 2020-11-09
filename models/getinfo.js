@@ -10,7 +10,7 @@ const Food = require('./foodinfo')
 // const urlId = 'https://www.themealdb.com/api/json/v1/1/lookup.php?i=52772' //Lookup full meal details by id
 const urlRandom = 'https://www.themealdb.com/api/json/v1/1/random.php' //Lookup a single random meal
 // const urlByName = 'https://www.themealdb.com/api/json/v1/1/search.php?s=' //search by name
-const urlCat = 'https://www.themealdb.com/api/json/v1/1/categories.php' //List all meal categories
+//const urlCat = 'https://www.themealdb.com/api/json/v1/1/categories.php' //List all meal categories
 // const urlCatFilt = 'https://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood' //Filter by Category
 // const urlAreaFilt = 'https://www.themealdb.com/api/json/v1/1/filter.php?a=Canadian' //Filter by Area
 
@@ -36,19 +36,4 @@ for (let i = 0; i < 1500 ; i++) {
         )
 }
 
-//List Categories
-for (let i = 0; i < 100 ; i++) {
-    fetch(urlCat)
-        .then(res => res.json())
-        .then(data => {
-            // console.log(data)
-            console.log(data.meals.strMeal)
-            let meal = new Food({
-                category: data.meals[0].strCategory
-            })
-            console.log("Categories: " + meal);
-            meal.save();
-        }
-        )
-}
 
